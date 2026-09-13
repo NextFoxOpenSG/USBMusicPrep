@@ -19,13 +19,15 @@ modules:
     build-commands:
       - python3 -m venv /app/venv
       - /app/venv/bin/pip install --no-cache-dir PySide6 mutagen
-      
+
       - install -D -m 755 generador_usb.py /app/bin/generador_usb.py
       - echo '#!/bin/sh' > /app/bin/usb-music-prep
       - echo 'exec /app/venv/bin/python /app/bin/generador_usb.py "$@"' >> /app/bin/usb-music-prep
       - chmod +x /app/bin/usb-music-prep
 
       - install -D -m 644 org.nextfoxopensg.USBMusicPrep.png /app/share/icons/hicolor/128x128/apps/org.nextfoxopensg.USBMusicPrep.png
+
+      - install -D -m 644 org.nextfoxopensg.USBMusicPrep.metainfo.xml /app/share/metainfo/org.nextfoxopensg.USBMusicPrep.metainfo.xml
 
       - install -d /app/share/applications
       - echo '[Desktop Entry]' > /app/share/applications/org.nextfoxopensg.USBMusicPrep.desktop
@@ -42,3 +44,5 @@ modules:
         path: generador_usb.py
       - type: file
         path: org.nextfoxopensg.USBMusicPrep.png
+      - type: file
+        path: org.nextfoxopensg.USBMusicPrep.metainfo.xml

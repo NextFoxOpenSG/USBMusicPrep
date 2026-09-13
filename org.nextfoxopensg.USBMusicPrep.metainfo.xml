@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.nextfoxopensg.USBMusicPrep</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>USB Music Organizer</name>
+  <summary>Organize and sequence audio collections for varied USB playback</summary>
+  <description>
+    <p>
+      USB Music Organizer is a desktop application built with Python and PySide6/Qt that fixes monotonous playback on embedded media players and vehicle head units.
+    </p>
+    <p>
+      The app analyzes and restructures music folders using a dynamic sorting algorithm that alternates genres, artists, and tempos to deliver a balanced, shuffled-style playback directly from USB flash drives.
+    </p>
+  </description>
+  <launchable type="desktop-id">org.nextfoxopensg.USBMusicPrep.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/NextFoxOpenSG/USBMusicPrep/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <developer_name>NextFox OpenSG</developer_name>
+  <url type="homepage">https://github.com/NextFoxOpenSG/USBMusicPrep</url>
+</component>
